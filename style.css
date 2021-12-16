@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+  /* max-width: 300px; */
+  /* width: 300px; */
+  /* flex-grow: 1; */
+}
+
+h1 {
+  font-family: "Comic Sans MS";
+  padding: 20px;
+  margin: 20px;
+}
+
+.fzInfoPositions {
+  font-size: 14px;
+  text-align: justify;
+}
+
+#instructions {
+  font-family: "american typewriter";
+  padding: 20px;
+  margin: 20px;
+}
+
+#sectionInputs {
+  padding: 10px;
+  margin: 20px 10px;
+}
+
+#superDiv {
+  width: 500px;
+  height: 500px;
+  border: 2px dotted black;
+  background-color: #fee3ec;
+}
+
+#round1Div {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 50px;
+  left: 50px;
+  border: 2px ridge black;
+  background-color: #93f5cf;
+}
+
+#gameContainer {
+  display: flex;
+  /* width: 100vw; */
+  justify-content: space-evenly;
+  gap: 7em;
+  padding: 0 2em;
+}
+
+h2 {
+  font-family: "Comic Sans MS";
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-family: "Comic Sans MS";
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+/* #iterationImg {
+  width: 40%;
+  height: auto;
+  float: left;
+} */
+
+.mySelectors {
+  display: flex;
+}
+
+.selectory {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hwinput {
+  width: 45px;
+}
