@@ -11,19 +11,16 @@
 <body>
 
     <header>
-        <h1 > WE LOVE POSITIONS ! and parties... </h1>
-      
-
+        <h1 > WE LOVE POSITIONS ! and parties... </h1>  
     </header>
+
     <section id="instructionsSection">
         <h2 id="instructions"> GOOD TO KNOW : </h2>
-        <p>
-            The CSS position property allows you to organize elements on the screen.<br>
+        <p class ="débutTxt">
+            The CSS position property allows you to organize elements on the screen.
             Position can be : static, relative, absolute, fixed. <br>
-            When setting the position, you can use the following properties: <br>
+            When setting the position, you can use the following properties: 
             top, right, bottom and left.
-
-
         </p>
     </section>
     
@@ -44,46 +41,35 @@
         <div class="selectory">
             <label for="Couleurh1">Couleur du h1 : </label>
             <select id="clrSelect"  name="clrInput">
-            <option value="red">red</option>
-            <option value="blue">blue</option>
-            <option value="green">green</option>
-            <option value="orange">orange</option>
-            <option value="yellow">yellow</option>
-        </select>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="green">green</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+            </select>
         </div>
         
-        <!-- TEST 1 : h1 en couleur --- NE FONCTIONNE PAS  
-        <label for="h1bgColor">Background du h1 : </label>
-        <input id="h1bgColor" name="h1bgColor" type="text" value="color" >
-        <button id="h1btn-bagdColor">Enter</button>
-            -->
-           
-        <!-- <div class="selector">
-            <label for="top">top : </label>
-            <input id="top" name="topInput" type="number" value="" step="1">
-            <button id="btn-top">Enter</button>
-        </div> -->
 
-        <div class="selectory">
-            <label for="top">top : </label>
+        <div class="selectory offset">
+            <label for="top">top  </label>
             <input id="top" class="hwinput" name="topInput" type="number" value="">
             <button id="btn-top">Enter</button>
         </div>
     
-        <div class="selectory">
-            <label for="right">right : </label>
+        <div class="selectory offset">
+            <label for="right">right  </label>
             <input id="right" class="hwinput" name="rightInput" type="number" value="">
             <button id="btn-right">Enter</button>
         </div>
         
-        <div class="selectory">
-            <label for="bottom">bottom : </label>
+        <div class="selectory offset">
+            <label for="bottom">bottom  </label>
             <input id="bottom" class="hwinput" name="bottomInput" type="number" value="">
             <button id="btn-bottom">Enter</button>   
         </div>
         
-        <div class="selectory">
-            <label for="left">left : </label>
+        <div class="selectory offset">
+            <label for="left">left </label>
             <input id="left" class="hwinput" name="leftInput" type="number" value="">
             <button id="btn-left">Enter</button> 
         </div>
@@ -91,62 +77,60 @@
     </section>
 
     <div id="gameContainer">
-    <section >
-    <div id="sectionInfosPositions">
+        <section >
+            <div id="sectionInfosPositions">
 
-        <div>
-            <h3>Static</h3>
-        <p class="fzInfoPositions">
-            The default value of an element is static. It means that the element is not positioned in any particular way.<br>
-            Offsets don't work on it ;)
-        </p>
-        </div>
+                <div>
+                    <h3>Static</h3>
+                    <p class="fzInfoPositions">
+                        The default value of an element is static. It means that the element is not positioned in any particular way.<br>
+                        Offsets don't work on it ;)
+                    </p>
+                </div>
 
-        <div>
-        <h3>Relative</h3>
-        <p class="fzInfoPositions">
-            You can adjust the position by setting the top, left, right, and bottom properties.<br>
-            It will move the element relative to where it would normally occur in the document. Other content will not be adjusted to fit into any gap left by the element.
-        </p>
-        </div>
+                <div>
+                    <h3>Relative</h3>
+                    <p class="fzInfoPositions">
+                        You can adjust the position by setting the top, left, right, and bottom properties.<br>
+                        It will move the element relative to where it would normally occur in the document. Other content will not be adjusted to fit into any gap left by the element.
+                    </p>
+                </div>
 
-        <div>       
-        <h3>Absolute</h3>
-        <p class="fzInfoPositions">
-            The element is positioned to the nearest positioned element in the DOM( with a position other than static.)     
-        </p>
-        </div> 
+                <div>       
+                    <h3>Absolute</h3>
+                    <p class="fzInfoPositions">
+                        The element is positioned to the nearest positioned element in the DOM( with a position other than static.)     
+                    </p>
+                </div> 
 
-        <div>
-        <h3>Fixed</h3>
-        <p class="fzInfoPositions">
-            The element will always be in the same place, even when you scroll.<br>
-            A fixed element is positioned relatively to the screen of your device (viewport).
-        </p>
-        </div>
+                <div>
+                    <h3>Fixed</h3>
+                    <p class="fzInfoPositions">
+                        The element will always be in the same place, even when you scroll.<br>
+                        A fixed element is positioned relatively to the screen of your device (viewport).
+                    </p>
+                </div>
 
+            </div>
+        </section>
+
+
+        <section id="workSpace">
+            <h2 id="h2Workspace"> The place to be :</h2>
+
+            <div id="scrollDiv">
+                <div id="superDiv">
+                    <div id ="winnerDiv"></div> 
+                    <div id ="userDiv" class="disco-box"></div>
+                </div>
+            </div>
+
+        </section>
+      
     </div>
-    </section>
 
-
-    <section id="workSpace">
-        <h2 id="h2Workspace"> The place to be :</h2>
-        
-        <div id="superDiv">
-            <div id ="round1Div"></div> 
-            <!--
-                <div id ="round2div"></div>   
-            -->
-            <!--
-                <div id ="round3div"></div>   
-            -->
-            <div id ="userDiv" class="disco-box"></div>
-        </div>
-
-    </section>
-</div>
-    
-    
+    <p id="youpie">Ceci est un jeu super, les USA sont sur le coup !!</p>
+  
 </body>
 </html>
 

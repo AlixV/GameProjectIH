@@ -32,7 +32,7 @@
 
 const superDiv = document.getElementById("superDiv");
 const userDiv = document.getElementById("userDiv");
-const round1Div = document.getElementById("round1Div");
+const winnerDiv = document.getElementById("winnerDiv");
 
 userDiv.style.position = "relative";
 userDiv.style.width ="80px";
@@ -81,30 +81,33 @@ function handleValueLeft(){
     checkPosition();
 }
 btnLeft.addEventListener("click",handleValueLeft);
+inputLeft.addEventListener("change",(event)=>{
+    userDiv.style.left = `${event.target.value}px`;
+})
 
 
-function generateRandomColor() { // TEST
-   return '#'+Math.floor(Math.random()*16777215).toString(16); // TEST
-} // TEST
+function generateRandomColor() { 
+   return '#'+Math.floor(Math.random()*16777215).toString(16); 
+}
 
-function changeColor() { //TEST
+function changeColor() { 
     userDiv.innerHTML="PARTY TIME BABY !!!"
     userDiv.style.opacity ="1"
-    userDiv.style.backgroundColor = generateRandomColor(); //TEST
+    userDiv.style.backgroundColor = generateRandomColor(); 
 }
 
 let intervalId;
 
 function checkPosition(){
-    let round1DivPosition = round1Div.getBoundingClientRect();
+    let winnerDivPosition = winnerDiv.getBoundingClientRect();
     let userDivPosition = userDiv.getBoundingClientRect();
 
-    if(round1DivPosition.x === userDivPosition.x && round1DivPosition.y === userDivPosition.y){
+    if(winnerDivPosition.x === userDivPosition.x && winnerDivPosition.y === userDivPosition.y){
         //userDiv.style.backgroundColor ="orange"; Fonctionne 
-        intervalId = setInterval(changeColor, 500); // Fonctionne!!
-        setTimeout(newRound, 3000); //FnewRound POUR NOUVEAU ROUND
+        intervalId = setInterval(changeColor, 500); 
+        setTimeout(newRound, 3000); 
     }else{
-        userDiv.style.backgroundColor ="#93f5cf"; // Fonctionne
+        userDiv.style.backgroundColor ="#93f5cf"; 
     if (intervalId) {clearInterval(intervalId); 
         userDiv.innerHTML="";
         userDiv.style.opacity ="0.5";
@@ -113,13 +116,13 @@ function checkPosition(){
 }
 
 function newRound(){
-    console.log(round1Div);
+    console.log(winnerDiv);
     let x = Math.floor(Math.random() *420);
-    let y = Math.floor(Math.random() *420); 
-    console.log(x); // => 419
-    console.log(y); // => 242
-    round1Div.style.top =`${x}px`;
-    round1Div.style.left = `${y}px`;
+    let y = Math.floor(Math.random() *720); 
+    console.log(x); 
+    console.log(y); 
+    winnerDiv.style.top =`${y}px`;
+    winnerDiv.style.left = `${x}px`;
 };
 
 

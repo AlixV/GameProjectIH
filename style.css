@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   font-family: "arial";
-  /* max-width: 300px; */
-  /* width: 300px; */
-  /* flex-grow: 1; */
+  /* background-color: #fff6da; */
 }
 
 h1 {
   font-family: "Comic Sans MS";
   padding: 20px;
   margin: 20px;
+  background-color: #35d0ba;
+  color: whitesmoke;
 }
 
 .fzInfoPositions {
@@ -24,26 +24,22 @@ h1 {
   margin: 20px;
 }
 
+.débutTxt {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2 {
+  font-family: "Comic Sans MS";
+  margin-bottom: 4px;
+  background-color: #002f35;
+  color: whitesmoke;
+}
+
 #sectionInputs {
   padding: 10px;
   margin: 20px 10px;
-}
-
-#superDiv {
-  width: 500px;
-  height: 500px;
-  border: 2px dotted black;
-  background-color: #fee3ec;
-}
-
-#round1Div {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  top: 50px;
-  left: 50px;
-  border: 2px ridge black;
-  background-color: #93f5cf;
 }
 
 #gameContainer {
@@ -54,9 +50,27 @@ h1 {
   padding: 0 2em;
 }
 
-h2 {
-  font-family: "Comic Sans MS";
-  margin-bottom: 4px;
+#scrollDiv {
+  height: 500px;
+  width: 504px;
+  overflow-y: scroll;
+}
+
+#superDiv {
+  height: 800px;
+  width: 500px;
+  border: 2px dotted black;
+  background-color: #fee3ec;
+}
+
+#winnerDiv {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 50px;
+  left: 50px;
+  border: 2px ridge black;
+  background-color: #93f5cf;
 }
 
 h3 {
@@ -65,22 +79,23 @@ h3 {
   margin-bottom: 3px;
 }
 
-/* #iterationImg {
-  width: 40%;
-  height: auto;
-  float: left;
-} */
-
 .mySelectors {
   display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
 }
 
 .selectory {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
   flex-wrap: wrap;
 }
 
 .hwinput {
   width: 45px;
+}
+
+#youpie {
+  margin: 30px;
 }
