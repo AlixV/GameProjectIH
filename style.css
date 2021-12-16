@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: "arial";
-  /* background-color: #fff6da; */
+}
+
+html {
+  background-color: #e7f5f3;
+}
+
+#sectionInfosPositions {
+  padding: 15px;
 }
 
 h1 {
@@ -60,7 +67,9 @@ h2 {
   height: 800px;
   width: 500px;
   border: 2px dotted black;
-  background-color: #fee3ec;
+  background-image: url(./images/oranges2-optim.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #winnerDiv {
@@ -75,7 +84,7 @@ h2 {
 
 h3 {
   font-family: "Comic Sans MS";
-  margin-top: 15px;
+  margin-top: 16px;
   margin-bottom: 3px;
 }
 
@@ -94,8 +103,36 @@ h3 {
 
 .hwinput {
   width: 45px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border-style: none;
 }
 
 #youpie {
   margin: 30px;
+}
+
+#userDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* display flex va s'appliquer à l'element. 
+Grace aux bask stick que j'ai introduit dans le js */
+
+.btn {
+  border-style: none;
+  color: whitesmoke;
+  background-color: #35d0ba;
+  width: 40px;
+}
+
+label {
+  margin-right: 4px;
+}
+
+select {
+  border-style: none;
+  height: 20px;
 }

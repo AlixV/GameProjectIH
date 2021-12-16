@@ -91,7 +91,8 @@ function generateRandomColor() {
 }
 
 function changeColor() { 
-    userDiv.innerHTML="PARTY TIME BABY !!!"
+    userDiv.innerHTML=`<span>PARTY TIME BABY !!!</span>`;
+    // userDiv.innerHTML="PARTY TIME BABY !!!"
     userDiv.style.opacity ="1"
     userDiv.style.backgroundColor = generateRandomColor(); 
 }
